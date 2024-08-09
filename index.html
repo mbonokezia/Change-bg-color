@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- this specifies the action to be displayed when the button is clicked -->
+    <button onclick="random();">Change color</button>
+<script>
+
+// represents the generated color,and where to make the color functional
+function random(){
+document.body.style.background = color();
+}
+// declares the color to be displayed
+function color(){
+    return '#' + Math.floor(Math.random() * 16777215).toString(16);
+}
+
+</script>
+
+</body>
+</html>
